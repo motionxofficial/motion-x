@@ -1,25 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+<title>Motion X Shop</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
 
-<title>Motion X | Shop</title>
+header {
+    background: #111;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
 
-<link rel="stylesheet" href="style.css">
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.product h3 {
+    margin: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 
 </head>
 
-
 <body>
 
-<header class="navbar">
-
-<div class="logo">
-MOTION <span>X</span>
-</div>
+<header>
+<h1>Motion X</h1>
+<p>Premium Fitness Gear</p>
 
 <nav>
 <a href="index.html">Home</a>
@@ -27,192 +93,102 @@ MOTION <span>X</span>
 <a href="about.html">About</a>
 </nav>
 
-<div class="nav-icons">
-<input type="text" id="search" placeholder="Search products...">
-🛒
-</div>
-
 </header>
 
 
-
-<section class="featured">
-
 <h2>Motion X Collection</h2>
 
-<p>
-Premium fitness equipment and apparel built for everyone.
-</p>
+
+<div class="shop">
 
 
-<div class="products">
+<div class="product">
+<img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e">
+<h3>Adjustable Dumbbells</h3>
+<p class="price">$49.99</p>
+<button>Buy Now</button>
+</div>
 
 
+<div class="product">
+<img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6">
+<h3>Smart Fitness Watch</h3>
+<p class="price">$39.99</p>
+<button>Buy Now</button>
+</div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1598289431512-b97b0917affc?auto=format&fit=crop&w=800&q=80">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598289431512-b97b0917affc">
 <h3>Performance Resistance Bands</h3>
-<p>$24.99</p>
-<button>Add To Cart</button>
+<p class="price">$14.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1586401100295-7a8096fd231a?auto=format&fit=crop&w=800&q=80">
+<div class="product">
+<img src="https://images.unsplash.com/photo-1583473848882-f9a5bc7fd2ee">
 <h3>Training Gloves</h3>
-<p>$19.99</p>
-<button>Add To Cart</button>
+<p class="price">$12.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80">
-<h3>Push-Up Handles</h3>
-<p>$14.99</p>
-<button>Add To Cart</button>
-</div>
-
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=800&q=80">
-<h3>Speed Skipping Rope</h3>
-<p>$12.99</p>
-<button>Add To Cart</button>
-</div>
-
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07d?auto=format&fit=crop&w=800&q=80">
-<h3>Core Sliders</h3>
-<p>$9.99</p>
-<button>Add To Cart</button>
-</div>
-
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=80">
-<h3>Ankle & Wrist Weights</h3>
-<p>$29.99</p>
-<button>Add To Cart</button>
-</div>
-
-
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80">
+<div class="product">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
 <h3>Motion X Premium Hoodie</h3>
-<p>$49.99</p>
-<button>Add To Cart</button>
+<p class="price">$34.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80">
-<h3>Performance Training Shirt</h3>
-<p>$24.99</p>
-<button>Add To Cart</button>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+<h3>Speed Skipping Rope</h3>
+<p class="price">$9.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80">
-<h3>Motion X Training Shorts</h3>
-<p>$29.99</p>
-<button>Add To Cart</button>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07f">
+<h3>Core Sliders</h3>
+<p class="price">$11.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1526401485004-2aa7c9c8f5d2?auto=format&fit=crop&w=800&q=80">
-<h3>Compression Shirt</h3>
-<p>$34.99</p>
-<button>Add To Cart</button>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1586401100295-7a8096fd231a">
+<h3>Ankle & Wrist Weights</h3>
+<p class="price">$19.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80">
-<h3>Performance Gym Socks</h3>
-<p>$9.99</p>
-<button>Add To Cart</button>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00">
+<h3>Yoga Mat</h3>
+<p class="price">$18.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80">
-<h3>Motion X Cap</h3>
-<p>$14.99</p>
-<button>Add To Cart</button>
+<div class="product">
+<img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c">
+<h3>Foam Roller</h3>
+<p class="price">$15.99</p>
+<button>Buy Now</button>
 </div>
 
 
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80">
-<h3>Elite Training Mat</h3>
-<p>$29.99</p>
-<button>Add To Cart</button>
 </div>
-
-
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=800&q=80">
-<h3>Recovery Foam Roller</h3>
-<p>$24.99</p>
-<button>Add To Cart</button>
-</div>
-
-
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1594737625785-c8c0f7b5e4f4?auto=format&fit=crop&w=800&q=80">
-<h3>Massage Recovery Ball</h3>
-<p>$12.99</p>
-<button>Add To Cart</button>
-</div>
-
-
-
-</div>
-
-</section>
-
 
 
 <footer>
-
-<h2>MOTION X</h2>
-
-<p>Premium Fitness & Lifestyle Equipment</p>
-
-<p>© 2026 Motion X</p>
-
+<p>© 2026 Motion X Fitness</p>
 </footer>
 
 
-
-<script src="script.js"></script>
-
 </body>
-
 </html>
