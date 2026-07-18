@@ -1,122 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Motion X Store</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+    color: white;
+}
+
+nav {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.product {
+    background: #1d1d1d;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 22px;
+}
+
+.product p {
+    font-size: 20px;
+}
+
+button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: grey;
+}
+
+footer {
+    background:black;
+    padding:20px;
+    text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>MOTION X</h1>
+<p>Train Hard. Move Better.</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="about.html">About</a>
+</nav>
+
+
 <section class="products">
 
+
 <div class="product">
-<img src="images/resistance-bands.jpg" alt="Performance Resistance Bands">
+<img src="images/resistance-bands.jpg">
 <h3>Performance Resistance Bands</h3>
 <p>$19.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/training-gloves.jpg" alt="Training Gloves">
+<img src="images/training-gloves.jpg">
 <h3>Training Gloves</h3>
 <p>$14.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/hoodie.jpg" alt="Motion X Premium Hoodie">
+<img src="images/hoodie.jpg">
 <h3>Motion X Premium Hoodie</h3>
 <p>$39.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/skipping-rope.jpg" alt="Speed Skipping Rope">
+<img src="images/skipping-rope.jpg">
 <h3>Speed Skipping Rope</h3>
 <p>$12.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/core-sliders.jpg" alt="Core Sliders">
+<img src="images/core-sliders.jpg">
 <h3>Core Sliders</h3>
 <p>$15.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/ankle-wrist-weights.jpg" alt="Ankle and Wrist Weights">
+<img src="images/ankle-wrist-weights.jpg">
 <h3>Ankle & Wrist Weights</h3>
 <p>$24.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/yoga-mat.jpg" alt="Premium Yoga Mat">
+<img src="images/yoga-mat.jpg">
 <h3>Premium Yoga Mat</h3>
 <p>$29.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/foam-roller.jpg" alt="Recovery Foam Roller">
+<img src="images/foam-roller.jpg">
 <h3>Recovery Foam Roller</h3>
 <p>$22.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/water-bottle.jpg" alt="Motion X Water Bottle">
+<img src="images/water-bottle.jpg">
 <h3>Motion X Water Bottle</h3>
 <p>$12.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/gym-bag.jpg" alt="Gym Training Bag">
+<img src="images/gym-bag.jpg">
 <h3>Gym Training Bag</h3>
 <p>$24.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/protein-shaker.jpg" alt="Protein Shaker Bottle">
+<img src="images/protein-shaker.jpg">
 <h3>Protein Shaker Bottle</h3>
 <p>$14.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/boxing-gloves.jpg" alt="Boxing Training Gloves">
+<img src="images/boxing-gloves.jpg">
 <h3>Boxing Training Gloves</h3>
 <p>$34.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/resistance-tubes.jpg" alt="Resistance Tube Kit">
+<img src="images/resistance-tubes.jpg">
 <h3>Resistance Tube Kit</h3>
 <p>$21.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/workout-timer.jpg" alt="Workout Timer">
+<img src="images/workout-timer.jpg">
 <h3>Workout Timer</h3>
 <p>$19.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/fitness-tracker.jpg" alt="Fitness Tracker Band">
+<img src="images/fitness-tracker.jpg">
 <h3>Fitness Tracker Band</h3>
 <p>$18.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/stretching-strap.jpg" alt="Stretching Strap">
+<img src="images/stretching-strap.jpg">
 <h3>Stretching Strap</h3>
 <p>$11.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 <div class="product">
-<img src="images/workout-towel.jpg" alt="Workout Towel">
+<img src="images/workout-towel.jpg">
 <h3>Workout Towel</h3>
 <p>$9.99</p>
 <button>Add to Cart</button>
 </div>
 
+
 </section>
+
+
+<footer>
+<p>© 2026 Motion X. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>
